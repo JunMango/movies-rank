@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:movieproject/api/api.dart';
 import 'package:movieproject/models/movie.dart';
 import '../widgets/movies_slider.dart';
-import 'package:movieproject/widgets/multi_search.dart';
+
 import '../widgets/trending_slider.dart';
 import 'package:movieproject/colors.dart';
 import 'dart:math';
@@ -42,12 +42,11 @@ class _HomeScreenState extends State<HomeScreen> {
     currentColor = startColor;
     backgroundDecoration = _buildGradientDecoration();
 
-    // 1초마다 전체 색상 천천히 변화
     Timer.periodic(const Duration(seconds: 1), (timer) {
       setState(() {
-        t += 0.05; // 0.01씩 증가하면서 전체 색상을 천천히 변화
+        t += 0.02;
         if (t >= 1.0) {
-          t = 0.0; // 1.0에 도달하면 다시 0.0으로 초기화
+          t = 0.0;
           startColor = endColor;
           endColor = getRandomColor();
         }
@@ -67,8 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Color calculateTweenColor() {
-    // 계산된 색상이 천천히 변하도록 0.01씩 감소
-    return Color.lerp(currentColor, startColor, 0.05) ?? startColor;
+    return Color.lerp(currentColor, startColor, 0.02) ?? startColor;
   }
 
   BoxDecoration _buildGradientDecoration() {

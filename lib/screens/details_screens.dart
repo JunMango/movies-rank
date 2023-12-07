@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:movieproject/constant.dart';
+
 import 'package:movieproject/models/movie.dart';
 import 'package:movieproject/widgets/back_button.dart';
 import 'package:chewie/chewie.dart';
@@ -85,13 +85,34 @@ class DetailScreen extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 16),
-                        Text(
-                          'Overview',
-                          style: GoogleFonts.openSans(
-                            fontSize: 25,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.white,
-                          ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Overview',
+                              style: GoogleFonts.openSans(
+                                fontSize: 25,
+                                fontWeight: FontWeight.w800,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Row(
+                              children: [
+                                const Icon(
+                                  Icons.auto_graph_rounded,
+                                  color: Colors.amber,
+                                ),
+                                Text(
+                                  '누적관람객수:${movie.audiAcc}',
+                                  style: GoogleFonts.roboto(
+                                    fontSize: 17,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                         const SizedBox(height: 8),
                         Text(
@@ -104,7 +125,6 @@ class DetailScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 16),
                         Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
                               'Release Date: ${movie.openDt}',
@@ -113,22 +133,6 @@ class DetailScreen extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),
-                            ),
-                            Row(
-                              children: [
-                                const Icon(
-                                  Icons.star,
-                                  color: Colors.amber,
-                                ),
-                                Text(
-                                  '누적관람객수:${movie.audiAcc}',
-                                  style: GoogleFonts.roboto(
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
                             ),
                           ],
                         ),
