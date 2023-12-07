@@ -87,7 +87,33 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("By Flutter"),
+        title: const Row(
+          children: [
+            Padding(
+              padding: EdgeInsets.only(
+                  left: 16.0), // Adjust the left padding as needed
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.movie_creation_outlined,
+                    color: Colors.blueGrey,
+                  ),
+                  Text(
+                    "By Flutter",
+                    style: TextStyle(
+                      fontFamily:
+                          'YourFont', // Replace with your preferred font family
+                      fontSize: 24.0, // Adjust the font size as needed
+                      fontWeight:
+                          FontWeight.bold, // Adjust the font weight as needed
+                      color: Colors.blueGrey, // Adjust the text color as needed
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
         flexibleSpace: Container(
           decoration: backgroundDecoration,
         ),
