@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:movieproject/api/api.dart';
 import 'package:movieproject/models/movie.dart';
+import 'package:movieproject/widgets/daily_trending_slider.dart';
 import '../widgets/movies_slider.dart';
 
 import '../widgets/trending_slider.dart';
@@ -110,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: Text(snapshot.error.toString()),
                         );
                       } else if (snapshot.hasData) {
-                        return TrendingSlider(snapshot: snapshot);
+                        return DailyTrendingSlider(snapshot: snapshot);
                       } else {
                         return const Center(
                           child: CircularProgressIndicator(),
