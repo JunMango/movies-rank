@@ -2,18 +2,102 @@
 ## 강의: 풀스텍 서비스 프로그래밍
 
 이 프로젝트는 경희대학교 2023_2학기 풀스텍 서비스 프로그래밍 강의에서 만든 영화 어플리케이션입니다.
-
-### 실행 명령어
-```bash
-flutter run
-```
-
-
 ### 기술 스택
   - 언어: Dart
   - 프레임워크: Flutter
   - 코드 라인 수: 749
 ### 
+### **기능 소개**
+
+1. **주간, 일간 박스 오피스 조회:**
+    - 애플리케이션을 통해 주간 및 일간 박스 오피스의 순위, 제목, 예고편 등을 확인할 수 있습니다.
+2. **상세 정보 확인:**
+    - 각 영화에 대한 상세 정보를 조회할 수 있습니다. (영화 제목, 개봉일, 관람객 수, 누적 관람객 수, 줄거리, 포스터 이미지, 예고편 등)
+    - 
+### **Movies Rank**
+
+### Client
+
+- GitHub Repository: [Movies-Rank](https://github.com/JunMango/Movies-Rank.git)
+
+**프로젝트 개요:**
+Movies Rank는 Flutter를 사용하여 개발된 모바일 애플리케이션입니다. 주간과 일간 박스 오피스 정보를 제공하며, 각 영화에 대한 상세 정보를 확인할 수 있습니다.
+
+### Server
+
+- GitHub Repository: [Movies-Rank-Server](https://github.com/JunMango/Movies-Rank-Server.git)
+
+**프로젝트 개요:**
+Movies Rank Server는 Node.js를 사용하여 개발된 서버 애플리케이션입니다. 클라이언트 애플리케이션에 필요한 주간과 일간 박스 오피스 정보를 제공합니다.
+
+---
+
+### **Movies Rank - 사용 설명서**
+
+### Client
+
+1. **프로젝트 클론:**
+    
+    ```bash
+    bashCopy code
+    git clone https://github.com/JunMango/Movies-Rank.git
+    
+    ```
+    
+2. **의존성 설치:**
+    
+    ```bash
+    bashCopy code
+    cd Movies-Rank
+    flutter pub get
+    
+    ```
+    
+3. **애플리케이션 실행:**
+    
+    ```bash
+    bashCopy code
+    flutter run
+    
+    ```
+    
+4. **애플리케이션 빌드:**
+    
+    ```bash
+    bashCopy code
+    flutter build apk
+    
+    ```
+    
+
+### Server
+
+1. **프로젝트 클론:**
+    
+    ```bash
+    bashCopy code
+    git clone https://github.com/JunMango/Movies-Rank-Server.git
+    
+    ```
+    
+2. **의존성 설치:**
+    
+    ```bash
+    bashCopy code
+    cd Movies-Rank-Server
+    npm install
+    
+    ```
+    
+3. **서버 실행:**
+    
+    ```bash
+    bashCopy code
+    node app.js
+    
+    ```
+    
+4. **서버 접속:**[http://localhost:8080](http://localhost:8080/)
 
 ### **프로젝트 요약**
 
