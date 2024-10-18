@@ -1,5 +1,6 @@
 # 경희대학교
 ## 강의: 풀스텍 서비스 프로그래밍
+발표PPT: https://www.canva.com/design/DAF2ehcSC1k/TDvaQxb8o_VmZXn4_KXn0g/edit
 
 이 프로젝트는 경희대학교 2023_2학기 풀스텍 서비스 프로그래밍 강의에서 만든 영화 어플리케이션입니다.
 ### 기술 스택
